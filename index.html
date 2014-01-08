@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>opensubtitles-download by emericg</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>opensubtitles-download</h1>
+        <h2>This software is designed to help you find and download subtitles for your favorite videos!</h2>
+        <a href="https://github.com/emericg/opensubtitles-download" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="opensubtitlesdownloadpy" class="anchor" href="#opensubtitlesdownloadpy"><span class="octicon octicon-link"></span></a>OpenSubtitlesDownload.py</h1>
+
+<h2>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>OpenSubtitlesDownload is a little software written in python, built to help you quickly find and download subtitles for your favorite videos. It can be used as a nautilus script, or as a regular application working under GNOME or KDE desktop environments. You can also use it in full console mode!</p>
+
+<p>The subtitles search is done by precisely identifying your videos files, not by using filename but by generating a unique hash signature from your files. This way, you have more chance to find the exact subtitles corresponding to your videos, avoiding synchronization problems between the subtitles and the soundtrack.</p>
+
+<p>The subtitles search and download service is powered by <a href="http://www.opensubtitles.org">www.opensubtitles.org</a>. Big thanks to their hard work on this amazing project! Be sure to give them your support if you appreciate the service provided.</p>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>Query subtitles in more than 60 different languages for documentaries, movies, TV shows and more...</li>
+<li>Query subtitles in multiple languages at once.</li>
+<li>Use a GNOME/GTK or KDE/Qt GUI depending on your desktop environment, or just use the CLI!</li>
+<li>Select multiple video files to search their subtitles simultaneously.</li>
+<li>Select different target languages to search them simultaneously.</li>
+<li>Detect valid video files (using mime types and file extensions).</li>
+<li>Detect correct video titles by computing hash file signatures, not by reading the filenames.</li>
+<li>Download subtitles automatically if only one is available, select the one you want otherwise.</li>
+<li>Rename downloaded subtitles to match source video file. Possibility to append the language code to the file name (ex: movie_en.srt).</li>
+</ul><h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<ul>
+<li>python (version 2 or 3)</li>
+<li>zenity (only for GNOME based desktop environments)</li>
+<li>kdialog (only for KDE based desktop environments)</li>
+<li>basic unix tools: wget &amp; gzip (subtitles download), ps &amp; grep (gui autodetection)</li>
+</ul><h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Quick installation as a nautilus script, under GNOME 3 desktop environment:</p>
+
+<blockquote>
+<p>$ git clone <a href="https://github.com/emericg/opensubtitles-download.git">https://github.com/emericg/opensubtitles-download.git</a><br>
+$ mkdir -p ~/.local/share/nautilus/scripts/<br>
+$ cp opensubtitles-download/opensubtitles-download.py ~/.local/share/nautilus/scripts/opensubtitles-download.py<br>
+$ chmod u+x ~/.local/share/nautilus/scripts/opensubtitles-download.py  </p>
+</blockquote>
+
+<h2>
+<a name="website" class="anchor" href="#website"><span class="octicon octicon-link"></span></a>Website</h2>
+
+<p>You can browse the project's GitHub page and wiki at <a href="https://github.com/emericg/opensubtitles-download">https://github.com/emericg/opensubtitles-download</a>.</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>GPL v3 <a href="http://www.gnu.org/licenses/gpl-3.0.txt">http://www.gnu.org/licenses/gpl-3.0.txt</a></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/emericg/opensubtitles-download/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/emericg/opensubtitles-download/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/emericg/opensubtitles-download"></a> is maintained by <a href="https://github.com/emericg">emericg</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
