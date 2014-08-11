@@ -1,44 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>OpenSubtitlesDownload.py by emericg</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="OpenSubtitlesDownload.py : This small software is designed to help you find and download subtitles for your favorite videos!">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>OpenSubtitlesDownload.py</title>
   </head>
+
   <body>
 
-      <header>
-        <h1>OpenSubtitlesDownload.py</h1>
-        <p>This small software is designed to help you find and download subtitles for your favorite videos!</p>
-      </header>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/emericg/OpenSubtitlesDownload">View on GitHub</a>
 
-      <div id="banner">
-        <span id="logo"></span>
+          <h1 id="project_title">OpenSubtitlesDownload.py</h1>
+          <h2 id="project_tagline">This small software is designed to help you find and download subtitles for your favorite videos!</h2>
 
-        <a href="https://github.com/emericg/OpenSubtitlesDownload" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/emericg/OpenSubtitlesDownload/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/emericg/OpenSubtitlesDownload/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/emericg/OpenSubtitlesDownload/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/emericg/OpenSubtitlesDownload/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h2>
 <a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
 
@@ -60,46 +52,27 @@
 <li>Detect correct video titles by computing hash file signatures, not by reading the filenames.</li>
 <li>Download subtitles automatically if only one is available, select the one you want otherwise.</li>
 <li>Rename downloaded subtitles to match source video file. Possibility to append the language code to the file name (ex: movie_en.srt).</li>
-</ul><h1>
-<a name="screenshots" class="anchor" href="#screenshots"><span class="octicon octicon-link"></span></a>Screenshots</h1>
+</ul><h2>
+<a name="screenshots" class="anchor" href="#screenshots"><span class="octicon octicon-link"></span></a>Screenshots</h2>
 
-<p><img src="http://gnome-look.org/CONTENT/content-pre1/127116-1.png" alt="Start subtitles search"></p>
+<p><img src="https://raw.githubusercontent.com/emericg/OpenSubtitlesDownload/screenshots/osd_screenshot_launch.png" alt="Start subtitles search"></p>
 
-<p><img src="http://gnome-look.org/CONTENT/content-pre2/127116-2.png" alt="Download selected subtitles"></p>
-
-<p>If multiple subtitles are available, just pick one from the list!
-<img src="http://gnome-look.org/CONTENT/content-pre3/127116-3.png" alt="Multiple subtitles selection"></p>
+<p><img src="https://raw.githubusercontent.com/emericg/OpenSubtitlesDownload/screenshots/osd_screenshot_autodownload.png" alt="Download selected subtitles"></p>
 
 <p>Enjoy your subtitled video!
-<img src="http://emericdev.com/archives/opensubtitles-download/osd_watch.png" alt="Enjoy your subtitled video!"></p>
+<img src="https://raw.githubusercontent.com/emericg/OpenSubtitlesDownload/screenshots/enjoy-sintel.jpg" alt="Enjoy your subtitled video!"></p>
+
+<p>If multiple subtitles are available, just pick one from the list!
+<img src="https://raw.githubusercontent.com/emericg/OpenSubtitlesDownload/screenshots/osd_screenshot_selection.png" alt="Multiple subtitles selection"></p>
+
+<p>You can even enables more infos on the selection windows:
+<img src="https://raw.githubusercontent.com/emericg/OpenSubtitlesDownload/screenshots/osd_screenshot_selection_custom.png" alt="Custom subtitles selection"></p>
+
+<p>Use OpenSubtitlesDownload to search for subtitles in different languages simultaneously:
+<img src="https://raw.githubusercontent.com/emericg/OpenSubtitlesDownload/screenshots/osd_screenshot_selection_language.png" alt="Multiple languages"></p>
 
 <h2>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
-
-<h3>
-<a name="download" class="anchor" href="#download"><span class="octicon octicon-link"></span></a>Download</h3>
-
-<p>You can download the latest developer version with the "downloads" buttons on the header of this page, or you can find various versions of the script on <a href="https://github.com/emericg/OpenSubtitlesDownload/wiki/wiki/Download-the-software">the download page</a> of the wiki, with changelogs and everything!</p>
-
-<h3>
-<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h3>
-
-<ul>
-<li>python (version 2 or 3)</li>
-<li>zenity (only for GNOME based desktop environments)</li>
-<li>kdialog (only for KDE based desktop environments)</li>
-<li>basic unix tools: wget &amp; gzip (subtitles downloading), ps &amp; grep (gui autodetection)</li>
-</ul><h3>
-<a name="installation-1" class="anchor" href="#installation-1"><span class="octicon octicon-link"></span></a>Installation</h3>
-
-<ul>
-<li><a href="https://github.com/emericg/OpenSubtitlesDownload/wiki/Usage-as-a-regular-CLI-script">Usage as a regular CLI script</a></li>
-<li>
-<a href="https://github.com/emericg/OpenSubtitlesDownload/wiki/Installation-as-a-nautilus-script">Installation as a nautilus script</a> (preferred method)</li>
-<li><a href="https://github.com/emericg/OpenSubtitlesDownload/wiki/Installation-under-GNOME-desktop-environment">Installation under GNOME desktop environment</a></li>
-<li><a href="https://github.com/emericg/OpenSubtitlesDownload/wiki/Installation-under-KDE-desktop-environment">Installation under KDE desktop environment</a></li>
-</ul><h3>
-<a name="quick-installation" class="anchor" href="#quick-installation"><span class="octicon octicon-link"></span></a>Quick installation</h3>
+<a name="quick-installation" class="anchor" href="#quick-installation"><span class="octicon octicon-link"></span></a>Quick installation</h2>
 
 <p>Quick installation as a nautilus script, under GNOME 3 desktop environment:</p>
 
@@ -110,10 +83,35 @@ $ cp OpenSubtitlesDownload/OpenSubtitlesDownload.py ~/.local/share/nautilus/scri
 $ chmod u+x ~/.local/share/nautilus/scripts/OpenSubtitlesDownload.py  </p>
 </blockquote>
 
+<h2>
+<a name="full-installation" class="anchor" href="#full-installation"><span class="octicon octicon-link"></span></a>Full installation</h2>
+
 <h3>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h3>
+
+<ul>
+<li>python (version 2 or 3)</li>
+<li>zenity (only for GNOME based desktop environments)</li>
+<li>kdialog (only for KDE based desktop environments)</li>
+<li>basic unix tools: wget &amp; gzip (subtitles downloading), ps &amp; grep (gui autodetection)</li>
+</ul><h3>
+<a name="download" class="anchor" href="#download"><span class="octicon octicon-link"></span></a>Download</h3>
+
+<p>You can download the latest developer version with the "downloads" buttons on the header of this page, or you can find various versions of the script on <a href="https://github.com/emericg/OpenSubtitlesDownload/wiki/wiki/Download-the-software">the download page</a> of the wiki, with changelogs and everything!</p>
+
+<h3>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<ul>
+<li><a href="https://github.com/emericg/OpenSubtitlesDownload/wiki/Usage-as-a-regular-CLI-script">Usage as a regular CLI script</a></li>
+<li>
+<a href="https://github.com/emericg/OpenSubtitlesDownload/wiki/Installation-as-a-nautilus-script">Installation as a nautilus script</a> (preferred method)</li>
+<li><a href="https://github.com/emericg/OpenSubtitlesDownload/wiki/Installation-under-GNOME-desktop-environment">Installation under GNOME desktop environment</a></li>
+<li><a href="https://github.com/emericg/OpenSubtitlesDownload/wiki/Installation-under-KDE-desktop-environment">Installation under KDE desktop environment</a></li>
+</ul><h3>
 <a name="adjust-various-settings" class="anchor" href="#adjust-various-settings"><span class="octicon octicon-link"></span></a>Adjust various settings</h3>
 
-<p>You can <strong>adjust several settings</strong> to make OpenSubtitlesDownload.py an even <strong>better experience</strong> suiting your every needs! Learn more on the <a href="https://github.com/emericg/OpenSubtitlesDownload/wiki/Adjust-settings">Adjust settings</a> wiki page.</p>
+<p>After the installation you can <strong>adjust several settings</strong> to make OpenSubtitlesDownload.py an even <strong>better experience</strong> suiting your every needs! Learn more on the <a href="https://github.com/emericg/OpenSubtitlesDownload/wiki/Adjust-settings">Adjust settings</a> wiki page.</p>
 
 <p>Available <strong>settings</strong> includes:</p>
 
@@ -136,12 +134,16 @@ $ chmod u+x ~/.local/share/nautilus/scripts/OpenSubtitlesDownload.py  </p>
 
 <p>OpenSubtitlesDownload.py is a free software released under the GPL v3 license <a href="http://www.gnu.org/licenses/gpl-3.0.txt">http://www.gnu.org/licenses/gpl-3.0.txt</a></p>
       </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/emericg">emericg</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">OpenSubtitlesDownload.py maintained by <a href="https://github.com/emericg">emericg</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -152,6 +154,7 @@ $ chmod u+x ~/.local/share/nautilus/scripts/OpenSubtitlesDownload.py  </p>
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
+
 
   </body>
 </html>
